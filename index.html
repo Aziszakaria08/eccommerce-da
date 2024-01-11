@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- animate css -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <title>Home-comers</title>
+    </head>
+
+    <body>
+        <!-- medsos -->
+        <div
+            class="chat fa fa-brands fa-square-whatsapp"
+            onclick="chat()"
+        ></div>
+        <!-- end medsos -->
+
+        <!-- slide -->
+        <div class="box-slide">
+            <div class="slider">
+                <div class="slides">
+                    <!-- radio button -->
+                    <input type="radio" name="radio-btn" id="radio1" />
+                    <input type="radio" name="radio-btn" id="radio2" />
+                    <input type="radio" name="radio-btn" id="radio3" />
+                    <!-- end radio button -->
+                    <!-- slide images -->
+                    <div class="slide first">
+                        <img src="assets/images/bigsale1.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/bigsale2.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/images/bigsale3.jpg" alt="" />
+                    </div>
+                    <!-- end images -->
+                    <!-- auto nav start -->
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                    <!-- auto nav end -->
+                    <!-- nav manual -->
+                    <div class="nav-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+                    <!-- end nav manual -->
+                </div>
+            </div>
+        </div>
+        <!-- end slide -->
+
+        <!-- navbar -->
+        <div class="top-nav">
+            <div class="logo">
+                <a href="#">
+                    <img src="/assets/images/logo.png" alt="" />
+                </a>
+            </div>
+            <a href="/index.html">
+                <span class="nav-icon fa fa-home"></span>
+                <span class="nav-text">HOME</span>
+            </a>
+            <a href="/product/index.html">
+                <span class="nav-icon fa fa-plus"></span>
+                <span class="nav-text">Product</span>
+            </a>
+            <a href="/category/index.html">
+                <span class="nav-icon fa fa-list"></span>
+                <span class="nav-text">Category</span>
+            </a>
+            <a href="/contact/contact.html">
+                <span class="nav-icon fa-solid fa-phone"></span>
+                <span class="nav-text">Contact</span>
+            </a>
+            <a href="#" style="float: right">
+                <span class="nav-icon fa-solid fa-user"></span>
+                <span class="nav-text">Login</span>
+            </a>
+        </div>
+<!-- Content -->
+        <main>
+            <div class="container">
+                <h2 class="title">PRODUCT LIST</h2>
+                <div class="row">
+                    <div class="col" onclick="buy('Baju T-shirt', 70000)">
+                        <img src="assets/images/product-1.jpg" alt="" />
+                        <h4>Baju T-shirt</h4>
+                        <p>Rp. 70.000</p>
+                    </div>
+                    <div class="col" onclick="buy('Sepatu Pria', 110000)">
+                        <img src="assets/images/product-2.jpg" alt="" />
+                        <h4>Sepatu pria</h4>
+                        <p>Rp. 110.000</p>
+                    </div>
+                    <div class="col" onclick="buy('Celana Jargon pria', 40000)">
+                        <img src="assets/images/product-3.jpg" alt="" />
+                        <h4>Celana Jargon pria</h4>
+                        <p>Rp. 40.000</p>
+                    </div>
+                    <div class="col" onclick="buy('Baju T-shirt pria', 70000)">
+                        <img src="assets/images/product-4.jpg" alt="" />
+                        <h4>Baju T-shirt pria</h4>
+                        <p>Rp. 70.000</p>
+                    </div>
+                    <div
+                        class="col"
+                        onclick="buy('Sepatu Nike Jordan', 500000)"
+                    >
+                        <img src="assets/images/product-5.jpg" alt="" />
+                        <h4>Sepatu Nike Jordan</h4>
+                        <p>Rp. 500.000</p>
+                    </div>
+                    <div class="col" onclick="buy('Baju T-shirt Pulma', 71000)">
+                        <img src="assets/images/product-6.jpg" alt="" />
+                        <h4>Baju T-shirt Pulma</h4>
+                        <p>Rp. 71.000</p>
+                    </div>
+                    <div class="col" onclick="buy('Kaos Kaki HRX', 20.000)">
+                        <img src="assets/images/product-7.jpg" alt="" />
+                        <h4>Kaos Kaki HRX</h4>
+                        <p>Rp. 20.000</p>
+                    </div>
+                    <div class="col" onclick="buy('Jam tangan fossil', 80000)">
+                        <img src="assets/images/product-8.jpg" alt="" />
+                        <h4>Jam tangan fossil</h4>
+                        <p>Rp. 80.000</p>
+                    </div>
+                    <div
+                        class="col"
+                        onclick="buy('Jam Tangan Roadster', 100000)"
+                    >
+                        <img src="assets/images/product-9.jpg" alt="" />
+                        <h4>Jam Tangan Roadster</h4>
+                        <p>Rp. 100.000</p>
+                    </div>
+                    <div class="col" onclick="buy('Sepatu HRX', 200000)">
+                        <img src="assets/images/product-10.jpg" alt="" />
+                        <h4>Sepatu HRX</h4>
+                        <p>Rp. 200.000</p>
+                    </div>
+                    <div
+                        class="col"
+                        onclick="buy('Sepatu Jogging wanita', 90000)"
+                    >
+                        <img src="assets/images/product-11.jpg" alt="" />
+                        <h4>Sepatu Jogging wanita</h4>
+                        <p>Rp. 90.000</p>
+                    </div>
+                    <div
+                        class="col"
+                        onclick="buy('Kolor Panjang Jogging', 120000)"
+                    >
+                        <img src="assets/images/product-12.jpg" alt="" />
+                        <h4>Celana Panjang Jogging</h4>
+                        <p>Rp. 120.000</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Copyright <span id="year"></span>. AzisCommerce</p>
+        </footer>
+
+        <script src="assets/source.js"></script>
+    </body>
+</html>
